@@ -57,7 +57,14 @@ export default function Footer() {
           <p className="text-xs text-gray-400">
             &copy; {new Date().getFullYear()} Helene Feeds
           </p>
-          <p className="text-xs text-gray-400">All rights reserved</p>
+          <div className="flex items-center gap-4">
+            <Link href="/terms" className="text-xs text-gray-400 hover:text-[#1c1c1c] transition-colors duration-300">
+              Terms of Service
+            </Link>
+            <Link href="/privacy" className="text-xs text-gray-400 hover:text-[#1c1c1c] transition-colors duration-300">
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
